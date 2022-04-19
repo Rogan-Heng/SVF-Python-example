@@ -1,0 +1,29 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "1b77aaea27ce4e831007ddcb75970d736a6cf59b1b4d612f1ae9f402c0aadfdd"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.9"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pybind11": {
+            "hashes": [
+                "sha256:20f56674da31c96bca7569b91e60f2bd30d693f0728541412ec927574f7bc9df",
+                "sha256:e5541f8bccf9111d1a94f7897593b55c4cf1a28d5e8cfc8225a855651f011071"
+            ],
+            "index": "pypi",
+            "version": "==2.9.2"
+        }
+    },
+    "develop": {}
+}
