@@ -1,0 +1,1 @@
+g++ -O3 -Wall -std=c++14 -ISVF/include -ISVF/llvm-13.0.0.obj/include -fPIC $(python3 -m pybind11 --includes) SVFpython.cpp -Wl,--whole-archive SVF/Release-build/lib/libSvf.a -Wl,--no-whole-archive -shared -o SVFpython.so
