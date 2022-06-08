@@ -1,0 +1,8 @@
+BUILD/
+.vscode/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+__pycache__/
+CMakeFiles/
+example.svf.bc
