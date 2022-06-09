@@ -4,7 +4,13 @@
 import ctypes
 
 import os
-libSvfModule = ctypes.cdll.LoadLibrary(os.getcwd() + '/py/cpp/libsvfModule.so')
+import sys
+
+print('sys.platform:' + sys.platform)
+if(sys.platform ==  'linux'):
+    libSvfModule = ctypes.cdll.LoadLibrary(os.getcwd() + '/py/cpp/libsvfModule.so')
+elif(sys.platform == 'darwin'):
+    libSvfModule = ctypes.cdll.LoadLibrary(os.getcwd() + '/py/cpp/libsvfModule.dylib')
 
 class SVFUtil(object):
     global libSvfModule
